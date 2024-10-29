@@ -4,23 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhythm</title>
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./output.css">
+    
 </head>
 <body>
     <!-- Navigation   -->
+  <nav class="bg-white border py-3 px-1 border-gray-200 dark:bg-gray-900">
+    <div class="container border rounded-3xl flex flex-wrap items-center justify-between mx-auto p-2">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rhythm</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-blue-800">Join Us</button>
+            <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li>
+            <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+  
      <!-- Hero -->
-      <header class="border border-red-500">
-            <div class="container flex justify-center px-20 py-10 mx-auto border border-green-500">
-                <div class="border flex justify-center gap-3 basis-1/2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ChanMyae_MgCho.jpg/1200px-ChanMyae_MgCho.jpg" alt="" class="w-56 h-[500px] rounded-full border-4 object-cover" >
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb9057151fa283cd480c384dd5" alt="" class="w-20 h-[500px] rounded-full border-4 object-cover" >
-                    <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="w-20 h-[500px] rounded-full border-4 object-cover" >
+      <header>
+            <div class="container flex flex-col lg:flex-row gap-5 justify-center px-3 md:px-20 py-10 mx-auto">
+                <div class="basis-1/2  p-3 flex justify-center gap-3 [&>.image:hover]:border-indigo-500 [&>.image:hover]:w-56 [&>.image:has(~.image:hover)]:w-12 [&>.image:has(~.image:hover)]:md:w-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ChanMyae_MgCho.jpg/1200px-ChanMyae_MgCho.jpg" alt="" class="image transition-all duration-500 w-56 h-[400px] rounded-full border-4 object-cover" >
+                    <img src="https://i.scdn.co/image/ab6761610000e5eb9057151fa283cd480c384dd5" alt="" class="image transition-all duration-500 w-12 md:w-24 h-[400px] md:h[500px] rounded-full border-4 object-cover" >
+                    <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="image transition-all duration-500 w-12 md:w-24 h-[400px]  md:h[500px] rounded-full border-4 object-cover" >
                 </div>
-                <div class="border basis-1/2">
-                    <h3 class="text-8xl font-bold text-indigo-500">Music is</h3>
-                    <h1 class="text-8xl font-bold text-indigo-500 mb-5">Everything</h1>
+                <div class="basis-1/2 p-3 ">
+                    <h3 class="text-5xl sm:6xl lg:7xl xl:8xl font-bold text-indigo-500">Music is</h3>
+                    <h1 class="text-5xl sm:6xl lg:7xl xl:8xl font-bold text-indigo-500 mb-5">Everything</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam officiis optio eveniet deserunt esse necessitatibus quod repellat unde </p>
-                    <div class="border flex gap-3 my-4">
+                    <div class="flex flex-wrap gap-3 my-4">
                         <div class="flex gap-1 items-center">
                             <span class="text-4xl text-indigo-500 font-bold">25</span>
                             <span class="font-bold">Top<br>Artists</span>
@@ -35,10 +71,10 @@
                         </div>
                     </div>
                     <div class="flex items-center bg-gray-100 rounded-full w-fit px-2 py-1">
-                        <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="relative w-14 h-14 rounded-full border-2 object-cover">
-                        <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="relative right-4 w-14 h-14 rounded-full border-2 object-cover">
-                        <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="relative right-8 w-14 h-14 rounded-full border-2 object-cover">
-                        <div class="relative right-12 flex justify-center items-center w-14 h-14 rounded-full border-2 text-white font-bold bg-gray-600">20+</div>
+                        <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="relative w-12 sm:w-14 h-12 sm:h-14 rounded-full border-2 object-cover">
+                        <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="relative right-4 w-12 sm:w-14 h-12 sm:h-14 rounded-full border-2 object-cover">
+                        <img src="https://i.pinimg.com/736x/93/73/af/9373aff6e3a47e7e20441901304f260e.jpg" alt="" class="relative right-8 w-12 sm:w-14 h-12 sm:h-14 rounded-full border-2 object-cover">
+                        <div class="relative right-12 flex justify-center items-center w-12 sm:w-14 h-12 sm:h-14 rounded-full border-2 text-white font-bold bg-gray-600">20+</div>
                         <div class=" relative right-12 font-bold">Top <br> Artists</div>
                         <a class="border p-2 rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -51,7 +87,7 @@
       </header>
     <!-- World Top Song    -->
      <section class="border border-red-500">
-        <div class="container px-20 py-10 mx-auto border border-green-500">
+        <div class="container px-3 md:px-20 py-10 mx-auto border border-green-500">
             <h3 class="font-bold text-center mb-3">WORLD TOP SONG</h3>
             <h4 class="text-center mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, sed in magni autem rerum consectetur voluptatibus eum sint, quam eius natus suscipit reiciendis amet saepe explicabo dignissimos ut velit doloremque.</h4>
             <div class="w-full h-[60vh] rounded-xl relative overflow-hidden">
@@ -63,5 +99,8 @@
             </div>
         </div>
      </section>
+
+     <!-- Flowbite  -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
